@@ -21,7 +21,7 @@ server.use(cors());
 server.use(bodyParser.json());
 
 // Created verifyToken middleware this will check if the token is valid,
-// then the user will allowed to post data to backend /user to frontend
+// then the user will allowed to get data to backend /user to frontend
 const verifyToken = (request,response,next) =>{
 
     // getting the token value from Network => response Headers => authorization
